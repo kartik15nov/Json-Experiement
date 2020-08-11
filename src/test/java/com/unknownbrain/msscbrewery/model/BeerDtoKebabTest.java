@@ -5,9 +5,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.json.JsonTest;
+import org.springframework.test.context.ActiveProfiles;
 
+@ActiveProfiles("kebab")
 @JsonTest
-class BeerDtoTest extends BeerTest {
+public class BeerDtoKebabTest extends BeerTest {
 
     @Autowired
     ObjectMapper objectMapper;
